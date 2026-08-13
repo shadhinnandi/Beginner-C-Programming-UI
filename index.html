@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginner C Programming · Learning System</title>
+  <meta name="description"
+    content="A complete, structured learning system to take you from zero programming knowledge to strong problem-solving ability in C." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__logo">{ C }</span>
+        <span class="nav__title">Beginner C</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#purpose">Purpose</a>
+        <a href="#structure">Chapters</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#notes">Notes</a>
+      </nav>
+      <a href="https://github.com/shadhinnandi/Beginner-C-programming" target="_blank" rel="noopener"
+        class="nav__cta">Repository</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <span class="hero__badge">ICS · SPL · DSA Foundation</span>
+      <h1 class="hero__title">
+        Master C Programming<br />and <span class="grad">problem solving</span>.
+      </h1>
+      <p class="hero__subtitle">
+        A comprehensive, structured educational system covering core syntax, program logic,
+        and software foundations. Tailored for academic courses and technical assessments.
+      </p>
+      <div class="hero__actions">
+        <a href="#structure" class="btn btn--primary">Start learning</a>
+        <a href="https://github.com/shadhinnandi/Beginner-C-programming" target="_blank" rel="noopener"
+          class="btn btn--ghost">View on GitHub</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num">15</span><span class="stat__label">Chapters</span></div>
+        <div class="stat"><span class="stat__num">300+</span><span class="stat__label">Problems</span></div>
+        <div class="stat"><span class="stat__num">3</span><span class="stat__label">Courses</span></div>
+        <div class="stat"><span class="stat__num">MIT</span><span class="stat__label">License</span></div>
+      </div>
+    </div>
+    <a href="#purpose" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- Author strip -->
+  <section class="author">
+    <div class="container author__inner">
+      <div class="author__avatar">SN</div>
+      <div class="author__text">
+        <p class="author__label">Authored by</p>
+        <p class="author__name">Shadhin Nandi</p>
+      </div>
+      <a href="https://github.com/shadhinnandi" target="_blank" rel="noopener"
+        class="author__link">github.com/shadhinnandi →</a>
+    </div>
+  </section>
+
+  <!-- Purpose -->
+  <section class="section" id="purpose">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">Purpose</span>
+        <h2 class="section__title">An all-in-one learning pathway.</h2>
+        <p class="section__lead">This project serves as a comprehensive, self-contained curriculum. It offers a
+          structured trajectory designed to guide learners from fundamental concepts to proficient, independent
+          problem-solving.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <div class="card__icon">01</div>
+          <h3>Accessible foundations</h3>
+          <p>No prior programming experience is required. Start with fundamental building blocks and progressively build
+            complexity.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">02</div>
+          <h3>Academic alignment</h3>
+          <p>Optimized for academic curricula, specifically Introductory Computer Systems (ICS) and Structured
+            Programming (SPL) courses.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">03</div>
+          <h3>Algorithmic logic</h3>
+          <p>Focuses heavily on developing programmatic thinking and problem-solving methodologies rather than rote
+            syntax memorization.</p>
+        </div>
+        <div class="card">
+          <div class="card__icon">04</div>
+          <h3>Preparation for DSA</h3>
+          <p>Provides a seamless progression toward Data Structures, Algorithms, and technical interviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contents -->
+  <section class="section section--alt" id="contents">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">Curriculum</span>
+        <h2 class="section__title">The core pillars of the system.</h2>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar__num">1</div>
+        <div class="pillar__body">
+          <h3>Comprehensive C Learning Path</h3>
+          <p>A structured, sequential syllabus covering fundamental and advanced programming concepts in C.</p>
+          <ul class="chips">
+            <li>Programming Foundations & Logical Analysis</li>
+            <li>Variables, Data Representation & Operators</li>
+            <li>Standard I/O Operations</li>
+            <li>Control Flow <code>if</code> <code>else</code> <code>switch</code></li>
+            <li>Iterative Structures <code>for</code> <code>while</code> <code>do-while</code></li>
+            <li>Modular Programming & Recursion</li>
+            <li>Data Structures: Arrays & Strings</li>
+            <li>File Systems & I/O Handling</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar__num">2</div>
+        <div class="pillar__body">
+          <h3>Analytical Skill Development</h3>
+          <p>A progression of conceptual frameworks designed to transition learners from syntax rules to robust
+            programmatic logic and design.</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar__num">3</div>
+        <div class="pillar__body">
+          <h3>Extensive Practical Application</h3>
+          <p><strong>Over 250 curated problems</strong> complete with detailed solutions, categorized by complexity
+            (<span class="tag tag--easy">Easy</span>, <span class="tag tag--med">Medium</span>, <span
+              class="tag tag--hard">Hard</span>) to systematically cultivate problem-solving competencies.</p>
+        </div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar__num">4</div>
+        <div class="pillar__body">
+          <h3>Advanced Challenge Suite</h3>
+          <p>An interview-oriented selection of challenges curated from prominent platforms and academic examinations:
+          </p>
+          <div class="grid grid--3 source-grid">
+            <div class="source"><span class="source__name">Codeforces</span><span class="source__meta">Rating
+                800–1500</span></div>
+            <div class="source"><span class="source__name">LeetCode</span><span class="source__meta">Easy &
+                Medium</span></div>
+            <div class="source"><span class="source__name">Academic Exams</span><span class="source__meta">University
+                Standards</span></div>
+          </div>
+          <p class="pillar__note">Includes reference questions with guided hints alongside comprehensive, step-by-step
+            verified solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">Curriculum Alignment</span>
+        <h2 class="section__title">Structured for academic courses.</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="course-card">
+          <h3>Introduction to Computer Systems</h3>
+          <p>Essential concepts in computer systems and primary programming techniques.</p>
+        </div>
+        <div class="course-card">
+          <h3>Structural Programming Language</h3>
+          <p>Procedural programming paradigms, memory layout, and logic synthesis.</p>
+        </div>
+        <div class="course-card">
+          <h3>Data Structures Preparation</h3>
+          <p>A rigorous foundation for transitioning to advanced algorithms and complex data models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Structure -->
+  <section class="section section--alt" id="structure">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">Syllabus</span>
+        <h2 class="section__title">Sequential Chapter Index</h2>
+        <p class="section__lead">Fourteen core chapters and a comprehensive problem bank. It is highly recommended to
+          follow the sequence in chronological order.</p>
+      </div>
+      <div class="timeline" id="timeline">
+        <button class="timeline__item" data-chapter="0"><span class="timeline__idx">00</span><span
+            class="timeline__name">Introduction</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="1"><span class="timeline__idx">01</span><span
+            class="timeline__name">Basics</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="2"><span class="timeline__idx">02</span><span
+            class="timeline__name">Variables & Data Types</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="3"><span class="timeline__idx">03</span><span
+            class="timeline__name">Input & Output</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="4"><span class="timeline__idx">04</span><span
+            class="timeline__name">Operators</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="5"><span class="timeline__idx">05</span><span
+            class="timeline__name">Conditional Statements</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="6"><span class="timeline__idx">06</span><span
+            class="timeline__name">Loops</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="7"><span class="timeline__idx">07</span><span
+            class="timeline__name">Pattern Problems</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="8"><span class="timeline__idx">08</span><span
+            class="timeline__name">Functions</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="9"><span class="timeline__idx">09</span><span
+            class="timeline__name">Arrays</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="10"><span class="timeline__idx">10</span><span
+            class="timeline__name">Strings</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="11"><span class="timeline__idx">11</span><span
+            class="timeline__name">Basic Projects</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="12"><span class="timeline__idx">12</span><span
+            class="timeline__name">File Handling</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="13"><span class="timeline__idx">13</span><span
+            class="timeline__name">Mindset & Problem Solving</span><span class="timeline__arrow">→</span></button>
+        <button class="timeline__item" data-chapter="14"><span class="timeline__idx">14</span><span
+            class="timeline__name">Practice Problem Bank</span><span class="timeline__arrow">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcomes + Learning style -->
+  <section class="section" id="outcomes">
+    <div class="container">
+      <div class="split">
+        <div class="split__col">
+          <span class="section__tag">Learning Outcomes</span>
+          <h2 class="section__title">Target competencies.</h2>
+          <ul class="check-list">
+            <li>Analyze and decompose complex computational challenges systematically.</li>
+            <li>Author standard-compliant, efficient, and secure C source code.</li>
+            <li>Articulate core paradigms of procedural programming and memory architecture.</li>
+            <li>Successfully approach academic examinations and professional technical interviews.</li>
+            <li>Transition seamlessly into advanced study of data structures and algorithms.</li>
+          </ul>
+        </div>
+        <div class="split__col">
+          <span class="section__tag">Pedagogy</span>
+          <h2 class="section__title">Theory, application, and mastery.</h2>
+          <ul class="check-list">
+            <li>Introduces concepts through progressive instruction to manage cognitive load.</li>
+            <li>Prioritizes computational logic and analysis over basic syntax memorization.</li>
+            <li>Integrates hands-on coding exercises into every learning module.</li>
+          </ul>
+          <div class="flow">
+            <span>Concept</span><span class="flow__arrow">→</span>
+            <span>Example</span><span class="flow__arrow">→</span>
+            <span>Practice</span><span class="flow__arrow">→</span>
+            <span class="flow__end">Mastery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notes -->
+  <section class="section section--alt" id="notes">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">Guidelines</span>
+        <h2 class="section__title">Pre-requisite advice.</h2>
+      </div>
+      <div class="notes">
+        <div class="note">
+          <span class="note__icon">!</span>
+          <p><strong>Syllabus Continuity:</strong> Follow the chapters sequentially. The curriculum is constructed
+            incrementally.</p>
+        </div>
+        <div class="note">
+          <span class="note__icon">!</span>
+          <p><strong>Active Learning:</strong> Practical coding is required. Theoretical reading is insufficient without
+            writing and debugging code.</p>
+        </div>
+        <div class="note">
+          <span class="note__icon">!</span>
+          <p><strong>Chapter Exercises:</strong> Do not bypass the problem sets; they are critical to validating
+            conceptual understanding.</p>
+        </div>
+        <div class="note">
+          <span class="note__icon">!</span>
+          <p><strong>Conceptual Depth:</strong> Focus on understanding underlying mechanisms rather than memorizing
+            solution templates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final message -->
+  <section class="quote">
+    <div class="container">
+      <blockquote>
+        <p>"Programming is not about memorizing syntax. It is about building your thinking ability, step by step."</p>
+        <footer>Begin the curriculum with Chapter 00 and proceed sequentially.</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- License -->
+  <section class="section" id="license">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__tag">License</span>
+        <h2 class="section__title">MIT License with attribution.</h2>
+      </div>
+      <div class="license-grid">
+        <div class="license-col">
+          <h3>Permitted Use</h3>
+          <ul class="check-list">
+            <li>Study and utilize the material for personal and academic growth.</li>
+            <li>Modify and adapt the codebase for custom implementations.</li>
+            <li>Distribute and share the repository link for educational purposes.</li>
+          </ul>
+        </div>
+        <div class="license-col">
+          <h3>Required Attribution</h3>
+          <ul class="check-list">
+            <li>Provide clear credit to the original author when referencing this project.</li>
+            <li>Author: <strong>Shadhin Nandi</strong> (<a href="https://github.com/shadhinnandi" target="_blank"
+                rel="noopener">github.com/shadhinnandi</a>)</li>
+          </ul>
+          <p class="license-note">The curricular structures, progressive learning schema, and problem bank designs are
+            part of the educational framework authored by Shadhin Nandi. The instructional architecture is the
+            intellectual property of the author.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">{ C }</span>
+        <span>Beginner C Programming Learning System</span>
+      </div>
+      <div class="footer__links">
+        <a href="https://github.com/shadhinnandi/Beginner-C-programming" target="_blank" rel="noopener">Repository</a>
+        <a href="https://github.com/shadhinnandi" target="_blank" rel="noopener">Author</a>
+        <a href="#top">Back to top</a>
+      </div>
+      <p class="footer__credit">Designed & authored by <strong>Shadhin Nandi</strong> · MIT License</p>
+    </div>
+  </footer>
+
+  <!-- Chapter Reader Modal -->
+  <div class="reader" id="reader" aria-hidden="true">
+    <div class="reader__backdrop" id="readerBackdrop"></div>
+    <div class="reader__panel">
+      <aside class="reader__sidebar" id="readerSidebar">
+        <div class="reader__sidebar-head">
+          <span class="nav__logo">{ C }</span>
+          <span class="reader__sidebar-title">Chapters</span>
+        </div>
+        <nav class="reader__nav" id="readerNav"></nav>
+      </aside>
+      <main class="reader__main">
+        <header class="reader__header">
+          <button class="reader__close" id="readerClose" aria-label="Close">✕</button>
+          <button class="reader__sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+          <div class="reader__nav-btns">
+            <button class="reader__btn" id="prevChapter" disabled>← Prev</button>
+            <span class="reader__counter" id="readerCounter">1 / 15</span>
+            <button class="reader__btn" id="nextChapter">Next →</button>
+          </div>
+        </header>
+        <div class="reader__content" id="readerContent">
+          <div class="reader__loading">Loading chapter…</div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
